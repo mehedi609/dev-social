@@ -53,7 +53,16 @@ router.post(
       await user.save();
 
       // Return jsonwebtoken
-      res.send('User Registered');
+      const payload = {
+        user: {
+          id: user.id
+        }
+      };
+
+      jwt.sign(payload, privateKey, { expiresIn: 36000 }, (err, token) => {
+        if (err) throw err;
+        res.json({ token });
+      });
     } catch (e) {
       console.error(e);
       res.status(500).send('Server Error');
