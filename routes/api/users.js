@@ -2,8 +2,11 @@ const express = require('express');
 const { check, validationResult } = require('express-validator');
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
+const config = require('config');
 
+const privateKey = config.get('privateKey');
 const User = require('../../models/User');
+const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 // @route   POST api/users
@@ -41,7 +44,7 @@ router.post(
       const avatar = gravatar.url(email, {
         s: '200',
         r: 'pg',
-        d: '404'
+        d: 'identicon'
       });
 
       user = new User({ name, email, avatar, password });
