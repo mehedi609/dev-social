@@ -3,7 +3,7 @@ const config = require('config');
 
 const privateKey = config.get('privateKey');
 
-module.exports = function(req, res, next) {
+const auth = (req, res, next) => {
   const token = req.header('x-auth-token');
 
   if (!token) {
@@ -18,3 +18,5 @@ module.exports = function(req, res, next) {
     return res.status(401).json({ msg: 'Token is not valid' });
   }
 };
+
+module.exports = { auth };

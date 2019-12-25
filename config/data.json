@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Jhon Doe",
+    "email": "jhon@gmail.com",
+    "password": "password"
+  },
+  {
+    "name": "mehedi",
+    "email": "mehedi609@gmail.com",
+    "password": "password"
+  },
+  {
+    "company": "Ambala IT",
+    "status": "Assistant Software Engineer",
+    "website": "https://techsoft.com",
+    "skills": "HTML,CSS,   JS, Node   , React, Python",
+    "location": "Dhaka, Bangladesh",
+    "bio": "I am Assistant Software Engineer",
+    "githubusername": "mehedi609",
+    "twitter": "https://twitter.com/mehedi609",
+    "facebook": "https://facebook.com/mehedi609",
+    "linkedin": "https://linkedin.com/mehedi609"
+  },
+  {
+    "company": "TechSoft INC",
+    "status": "Junior Web Developer",
+    "website": "https://techsoft.com",
+    "skills": "HTML,CSS,   JS, Node   , Vue,Rubi",
+    "location": "Dhaka, Bangladesh",
+    "bio": "I am Junior Web Developer"
+  },
+  {
+    "title": "Web Developer",
+    "company": "Tech Guy Web Solutions",
+    "location": "Dhanmondi, Dhaka",
+    "from": "1-5-2006",
+    "to": "1-7-2009",
+    "description": "Full stack web developer"
+  },
+  {
+    "title": "Assistant Software Engineer",
+    "company": "Ambala IT",
+    "location": "Shaymoli, Dhaka",
+    "from": "1-5-2019",
+    "current": true,
+    "description": "Full stack web developer"
+  }
+]

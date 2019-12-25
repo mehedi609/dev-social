@@ -3,9 +3,9 @@ const { check, validationResult } = require('express-validator');
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const config = require('config');
+const { User } = require('../../models/User');
 
 const privateKey = config.get('privateKey');
-const User = require('../../models/User');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 
@@ -67,7 +67,7 @@ router.post(
         res.json({ token });
       });
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
       res.status(500).send('Server Error');
     }
   }
