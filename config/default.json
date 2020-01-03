@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://mehedi609:39039820@dev-connector-v2-grbtk.mongodb.net/test?retryWrites=true&w=majority",
-  "privateKey": "myPrivateKey"
+  "privateKey": "myPrivateKey",
+  "githubClientId": "afb4bb79dbf03cc0ec89",
+  "githubClientSecret": "c353ec26180e0a38db20d198dd181399f104ccf1"
 }
