@@ -7,3 +7,9 @@ export const setAuthToken = token => {
     delete axios.defaults.headers.common['x-auth-token'];
   }
 };
+
+export const config = {
+  headers: {
+    'Content-Type': 'application/json'
+  }
+};
